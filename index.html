@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+    </head>
+
+    <body>
+        <a-scene backgroundcolor = "black">
+            <a-a-assets timeout = "1000">
+                <a-asset-item id="dog" src = "shiba_inu_dog/scene.gltf"></a-asset-item>
+                <a-asset-item id="lamp" src = "./lamp_post/scene.gltf"></a-asset-item>
+                <a-asset-item id="boy" src = "./boy/scene.gltf"></a-asset-item>
+
+            </a-a-assets>
+
+            <a-circle position="0 0 -50" rotation="-90 0 0" radius="40" color = "blue"></a-circle>
+
+            <a-entity position="0 0 -50" gltf-model="#dog" scale="1 1 1" rotation="0 0 0">
+            <a-entity position="-20 0 -50" gltf-model="#lamp" scale="0.80 0.80 0.80" rotation="0 0 0">
+            <a-entity position="60 0 -50" gltf-model="#boy" scale="0.80 0.80 0.80" rotation="0 0 0">
+
+            </a-entity>
+
+        </a-scene>
+    </body>
+</html>
